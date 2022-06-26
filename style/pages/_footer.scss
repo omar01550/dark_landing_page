@@ -1,0 +1,33 @@
+footer{
+    width:100%;
+    background-color: var(--dark-blue-footer);
+    .container{
+        padding: 50px;
+
+        .footer-content{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           padding:20px;
+           justify-items:center;
+           @media(max-width:767px){
+              grid-template-columns: repeat(1,1fr);
+           }
+
+           &>*{
+              color: var(--white-color);
+              margin-top: 30px;
+           }
+
+           a{
+             color:white;
+           }
+
+        }
+
+
+
+
+
+
+    }
+}

@@ -1,0 +1,57 @@
+.second{
+    width: 100%;
+    background-color: var(--primary-color);
+    overflow: hidden;
+
+    .container{
+       padding: 70px 0;
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       justify-items:center;
+
+
+
+       @media(max-width:767px){
+         grid-template-columns: repeat(1,1fr);
+
+
+       }
+
+       .card{
+
+           width:300px;
+           padding:20px;
+           margin-top: 30px;
+           text-align: center;
+           transform: translateY(-700px);
+           transition: 700ms;
+           @media(max-width:767px){
+               transform: translateY(-1400px);
+               transition: 1.1s;
+           }
+
+
+             img{
+                display: block;
+                margin:5px auto;
+             }
+
+             h2{
+                margin-top:25px;
+                color:var(--white-color);
+             }
+
+             p{
+                margin-top:20px;
+                color:rgba(white,0.5);
+
+             }
+
+
+       }
+
+    }
+
+
+
+}

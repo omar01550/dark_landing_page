@@ -1,0 +1,59 @@
+.three{
+    width: 100%;
+    background-color: var(--primary-color);
+    overflow: hidden;
+
+
+    .container{
+
+      padding: 70px 0;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      @media(max-width:767px){
+         grid-template-columns: 1fr;
+         justify-items:center;
+      }
+
+      img{
+        width:390px;
+        height: 390px;
+        transform: translateX(-500px);
+        transition: 1s;
+      }
+
+      .content{
+        @media(max-width:767px){
+           text-align: center;
+           margin-top: 30px;
+           padding:0 30px;
+
+        }
+        transform: translateX(800px);
+        transition: 1s;
+         h3{
+             color:var(--white-color);
+             font-size:2.3rem;
+             font-weight: bold;
+             text-transform: capitalize;
+
+
+         }
+
+         p{
+            color: rgba(white,0.5);
+            font-size:1.3rem;
+            margin-top: 30px;
+         }
+
+         a{
+            display: block;
+            margin-top: 30px;
+            color:var(--blue-second);
+            font-size:2rem;
+         }
+      }
+
+    }
+
+}

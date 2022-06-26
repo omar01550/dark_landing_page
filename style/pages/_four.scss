@@ -1,0 +1,50 @@
+.four{
+     width: 100%;
+     background-color: var(--dark-blue);
+     .container{
+        padding:120px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        @media(max-width:767px){
+           justify-content: space-around;
+           align-items: center;
+        }
+
+        .card{
+           width:300px;
+           padding:20px;
+           border-radius:5px;
+           background-color: var(--primary-color);
+           color: white;
+           @media(max-width:767px){
+              margin-top: 70px;
+              
+           }
+
+             p{
+                color: rgba(white,0.5);
+             }
+
+             div.person{
+                 margin-top: 30px;
+                 display: flex;
+                 justify-content: space-around;
+                 align-items: center;
+                img{
+                   width:80px;
+                   height: 80px;
+                   border-radius:50%;
+                }
+                div{
+                   display: flex;
+                   flex-direction: column;
+                }
+             }
+        }
+
+
+
+     }
+}
