@@ -1,3 +1,23 @@
+//show and remove nanvbar
+
+
+let bars=document.querySelector(".fa-bars");
+let navBar=document.querySelector("nav");
+
+
+
+bars.addEventListener("click",function(){
+
+    navBar.classList.toggle("show")
+
+    if(navBar.classList.contains("show")){
+       bars.style.color="white";
+    }else{
+       bars.style.color="black";
+    }
+})
+
+
 let scrollToTop=document.querySelector(".scroll-to-top");
 
 

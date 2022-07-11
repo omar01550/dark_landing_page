@@ -20,6 +20,9 @@
         height: 390px;
         transform: translateX(-500px);
         transition: 1s;
+        @media(max-width:576px){
+           width:90%;
+        }
       }
 
       .content{

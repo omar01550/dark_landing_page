@@ -22,6 +22,19 @@
    cursor: pointer;
 }
 
+
+.show{
+    display: block;
+}
+
+.show-f{
+   display: flex;
+}
+.show-g{
+   display: grid;
+
+}
+
 .hidden{
    display: none;
 }
